@@ -8,14 +8,30 @@
 <link rel = "icon" type = "image/x-icon" href = "/assets/img/icons/favicon.png">
 <meta name="description" content="Suleyman Mammadov">
 <meta charset="UTF8">
+
+
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+ <!-- Icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+ <!-- Patterns -->
+ <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+ <!-- Main CSS -->
+ <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 
 <body>  
     <!-- Personal Information -->
-<h1> Hi! I'm Suleyman Mammadov</h1>
+<h1> Hi! I'm </h1>
+<h1 id="name">Suleyman Mammadov</h1>
 
     <tr>
-    <td> <img src="./assets/img/profilepic.png" width="170" alt="My PP"></td>
+    <td id="profilepic"> <img src="./assets/img/profilepic.png" width="170" alt="My PP"></td>
     <td> 
     </td>
     </tr>
@@ -36,6 +52,13 @@
 </nav>
 
 <hr />
-
+<css-doodle click-to-update>
+@grid: 20 / 100vmax / #white;
+@content: @unicode.r(0x2500, 0x257f);
+color: hsla(@r360, 70%, 70%, @r.9);
+font-size: 8vmin;
+font-family: sans-serif;
+</css-doodle>
+<script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
 </body>
 </html>
