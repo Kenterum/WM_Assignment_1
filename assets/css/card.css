@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+  }
+  
+  css-doodle {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #name {
+      font-family: 'Pixelify Sans', sans-serif;
+      color: rgb(42, 9, 255);
+      font-weight: bolder;
+    
+  }
+  
+  
+  
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  a, .fa-brands {
+    text-decoration: none;
+    color: #ff0000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  a:hover, .fa-brands:hover {
+    background-color: transparent;
+  }
+  
+  section {
+    width: 520px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #card {
+    background-color: white;
+    background: url("./assets/img/bg-try-5.png") repeat-x right top #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #card:hover {
+    transform: scale(1.05);
+  }
+  
+  img {
+    width: 210px;
+    height: 210px;
+  }
+  
+  .title h1 {
+    font-size: 34px;
+    margin: 12px 0;
+  }
+  
+  .title h2 {
+    margin-top: 2px;
+  }
+  
+  .toggle-wrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .details-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./assets/img/bg-try-6.png");
+    padding: 10px 0;
+  }
+  
+  #contact-toggle:checked ~ #contact-details {
+    max-height: 30px;
+  }
+  
+  #about-toggle:checked ~ #about-details {
+    max-height: 30px  ;
+  }
+  
+  #contact-toggle:checked ~ .toggle-wrapper #about-toggle:not(:checked) + .toggle-label + #about-details {
+    max-height: 0;
+  }
+  
+  #about-toggle:checked ~ .toggle-wrapper #contact-toggle:not(:checked) + .toggle-label + #contact-details {
+    max-height: 0;
+  }
+  
+  .toggle-label {
+    display: inline-block;
+    background-color: #FEF9E7;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .toggle-label:hover {
+    background-color: #ff8800;
+    color: #ffffff;
+  }
+  
+  #contact-buttons, #icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .contact-btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    
+  }
+  
+  .contact-btn:hover {
+    transition: color 0.3s ease-in-out;
+    color: #ffffff;
+  }
+  
+  #icons i {
+    font-size: 24px;
+    color: #ff8800;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #icons i:hover {
+    color: #ffffff;
+  }
+  
