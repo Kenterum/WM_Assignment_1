@@ -47,7 +47,7 @@ body {
   
   #card {
     background-color: white;
-    background: url("/assets/img/bg-try-5.png") repeat-x right top #f4f4f4;
+    background: url("/Web-Mobile/assets/img/bg-try-5.png") repeat-x right top #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("./assets/img/bg-try-6.png");
+    background: url("/Web-Mobile/assets/img/bg-try-6.png");
     padding: 10px 0;
   }
   
