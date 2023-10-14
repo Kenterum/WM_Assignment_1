@@ -36,13 +36,38 @@ h1 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    gap: 10px;
     text-align: center;
 }
 
 nav ul li {
     display: inline;
     margin: 0 20px;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: transparent;
+    color: #ff0000;
+    background-color: antiquewhite;
 }
