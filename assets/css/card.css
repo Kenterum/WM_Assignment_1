@@ -110,7 +110,7 @@ body {
   #contact-toggle:checked ~ .toggle-wrapper #about-toggle:not(:checked) + .toggle-label + #about-details {
     max-height: 0;
   }
-  
+  /*  Seems not possible without javascript */
   #about-toggle:checked ~ .toggle-wrapper #contact-toggle:not(:checked) + .toggle-label + #contact-details {
     max-height: 0;
   }
@@ -140,7 +140,8 @@ body {
   .contact-btn {
     padding: 8px 12px;
     border-radius: 4px;
-    
+    color: #ff8800;
+    font-size: larger;
   }
   
   .contact-btn:hover {
