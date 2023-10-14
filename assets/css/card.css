@@ -47,7 +47,7 @@ body {
   
   #card {
     background-color: white;
-    background: url("./assets/img/bg-try-5.png") repeat-x right top #f4f4f4;
+    background: url("/assets/img/bg-try-5.png") repeat-x right top #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
